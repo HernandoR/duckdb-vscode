@@ -10,7 +10,7 @@
 import * as assert from "assert";
 import * as vscode from "vscode";
 
-const EXTENSION_ID = "chuckjonas.duckdb";
+const EXTENSION_ID = "hernandor.duckdb";
 
 suite("DuckDB Extension Smoke Tests", function () {
   this.timeout(30_000);
