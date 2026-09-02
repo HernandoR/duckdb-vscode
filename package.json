@@ -1,13 +1,17 @@
 {
-  "name": "duckdb",
-  "displayName": "DuckDB",
+  "name": "duck-viewer",
+  "displayName": "Duck Viewer",
   "description": "A DuckDB client for VS Code — query CSV, Parquet, JSON, and Excel files directly",
   "version": "0.0.27",
-  "publisher": "chuckjonas",
+  "publisher": "hernandor",
   "icon": "resources/icon.png",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ChuckJonas/duckdb-vscode.git"
+    "url": "https://github.com/HernandoR/duckdb-vscode.git"
+  },
+  "homepage": "https://github.com/HernandoR/duckdb-vscode#readme",
+  "bugs": {
+    "url": "https://github.com/HernandoR/duckdb-vscode/issues"
   },
   "license": "MIT",
   "engines": {

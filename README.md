@@ -1,16 +1,29 @@
-# 🦆 DuckDB for VS Code
+# 🦆 Duck Viewer
 
-[![VS Code Marketplace](https://img.shields.io/visual-studio-marketplace/v/chuckjonas.duckdb?label=VS%20Code%20Marketplace)](https://marketplace.visualstudio.com/items?itemName=chuckjonas.duckdb)
-[![Open VSX](https://img.shields.io/open-vsx/v/chuckjonas/duckdb?label=Open%20VSX)](https://open-vsx.org/extension/chuckjonas/duckdb)
+[![VS Code Marketplace](https://img.shields.io/visual-studio-marketplace/v/hernandor.duck-viewer?label=VS%20Code%20Marketplace)](https://marketplace.visualstudio.com/items?itemName=hernandor.duck-viewer)
+[![Open VSX](https://img.shields.io/open-vsx/v/hernandor/duck-viewer?label=Open%20VSX)](https://open-vsx.org/extension/hernandor/duck-viewer)
 
-> An unofficial DuckDB extension for Visual Studio Code. Query CSV, Parquet, JSON, and Excel files directly. Connect to `.duckdb`, S3, Postgres, Google Sheets and more.
+> Duck Viewer is an unofficial DuckDB client for Visual Studio Code. Query CSV, Parquet, JSON, and Excel files directly. Connect to `.duckdb`, S3, Postgres, Google Sheets and more.
 
-![Query Parquet files directly](https://raw.githubusercontent.com/ChuckJonas/duckdb-vscode/main/resources/query-parquet.gif)
+![Query Parquet files directly](https://raw.githubusercontent.com/HernandoR/duckdb-vscode/main/resources/query-parquet.gif)
 
-![Live Preview](https://raw.githubusercontent.com/ChuckJonas/duckdb-vscode/main/resources/live-preview-demo.gif)
+![Live Preview](https://raw.githubusercontent.com/HernandoR/duckdb-vscode/main/resources/live-preview-demo.gif)
 
-![Database Explorer](https://raw.githubusercontent.com/ChuckJonas/duckdb-vscode/main/resources/database-explorer.gif)
+![Database Explorer](https://raw.githubusercontent.com/HernandoR/duckdb-vscode/main/resources/database-explorer.gif)
 
+
+## About This Fork
+
+This extension is a fork of [ChuckJonas/duckdb-vscode](https://github.com/ChuckJonas/duckdb-vscode), created and maintained by [Charlie Jonas](https://github.com/ChuckJonas). All credit for the original design and the vast majority of the code belongs to him.
+
+The fork is published as **Duck Viewer** (`hernandor.duck-viewer`). The name differs from upstream because the Marketplace does not accept `duckdb` as a fork's extension name. It exists for one practical reason: I need to install the extension conveniently across several machines, and the changes below have not been merged upstream. If they land upstream, the original extension is the one to use.
+
+Changes carried by this fork:
+
+- `.duckdb` / `.ddb` database files open as a table and view overview in the data viewer.
+- `STRUCT` columns render as nested sub-columns in the results table.
+
+Bug reports for these changes belong in [this repository's issues](https://github.com/HernandoR/duckdb-vscode/issues). Everything else should go to the [upstream project](https://github.com/ChuckJonas/duckdb-vscode/issues).
 
 ## Overview
 
@@ -359,7 +372,7 @@ Maximum history entries to keep (default: `1000`).
 
 ## License
 
-MIT
+MIT. The original work is copyright Charlie Jonas ([ChuckJonas/duckdb-vscode](https://github.com/ChuckJonas/duckdb-vscode)); this fork keeps the same license.
 
 ---
 

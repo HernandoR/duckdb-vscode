@@ -1,10 +1,13 @@
 # Change Log
 
-All notable changes to the "duckdb" extension will be documented in this file.
+All notable changes to the Duck Viewer extension will be documented in this file.
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
 ## Unreleased
+
+### Changed
+- **Published as a fork named Duck Viewer** (`hernandor.duck-viewer`). The `duckdb` extension name is not available to the fork, so it is renamed; command IDs and settings keep the `duckdb.` prefix, so existing keybindings and configuration continue to work. The upstream extension by Charlie Jonas remains at [ChuckJonas/duckdb-vscode](https://github.com/ChuckJonas/duckdb-vscode) (`chuckjonas.duckdb`); see the README section "About This Fork" for why the fork exists. Repository, homepage, and issue links now point to [HernandoR/duckdb-vscode](https://github.com/HernandoR/duckdb-vscode).
 
 ### Added
 - **`.duckdb` / `.ddb` files open as a database overview.** Opening a database file attaches it (read-only when the file allows it) and lists its tables and views with row/column counts; picking one shows the usual schema/data view and generates catalog-qualified SQL. The attachment is reused when the Database Explorer already holds one, and is detached when the last editor for the file closes. New `duckdb.fileViewer.database` setting (default `true`) controls the automatic editor association.
